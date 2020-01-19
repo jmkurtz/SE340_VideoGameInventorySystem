@@ -1,0 +1,82 @@
+<div class="nintendoPageClass">
+    <br>
+    <mat-card class="consoleToolbar">
+            <mat-grid-list cols="3" rowHeight="8:1">
+                <mat-grid-tile>
+                    <button mat-button routerLink="/xboxpage">
+                        <table><tr><td>
+                            <img src="../../assets/img/xbox-icon.png" width="40">
+                        </td><td>
+                            <h1 mat-header>Xbox</h1>
+                        </td></tr></table>
+                    </button>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <button mat-button routerLink="/pcpage">
+                        <table><tr><td>
+                            <img src="../../assets/img/pc-icon.jpg" width="50">
+                        </td><td>
+                            <h1 mat-header>PC</h1>
+                        </td></tr></table>
+                    </button>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <button mat-button routerLink="/ps4page">
+                        <table><tr><td>
+                                <img src="../../assets/img/ps4-icon.jpg" width="50">
+                            </td><td>
+                                <h1 mat-header>PlayStation 4</h1>
+                            </td></tr></table>
+                    </button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card>
+    <br><br>
+    <img src="../../assets/img/nintendo-background.png" class="nintendoLogo">
+    <mat-card class="tablecardClass">
+        <mat-toolbar>
+            <button mat-button (click)="openAdd()"><mat-icon>playlist_add</mat-icon> Add Game</button>
+            <button mat-button (click)="clearAll()"><mat-icon>delete_sweep</mat-icon> Clear All</button>
+        </mat-toolbar>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="title">
+                <th mat-header-cell *matHeaderCellDef> Title </th>
+                <td mat-cell *matCellDef="let element">{{element.Title}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="rating">
+                <th mat-header-cell *matHeaderCellDef> Rating </th>
+                <td mat-cell *matCellDef="let element">{{element.Rating}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="console">
+                <th mat-header-cell *matHeaderCellDef> Console </th>
+                <td mat-cell *matCellDef="let element">{{element.GameConsole}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="quantity">
+                <th mat-header-cell *matHeaderCellDef> Quantity </th>
+                <td mat-cell *matCellDef="let element">{{element.Quantity}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef> Description </th>
+                <td mat-cell *matCellDef="let element">{{element.Description}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="edit">
+                <th mat-header-cell *matHeaderCellDef> Edit </th>
+                <td mat-cell *matCellDef="let element"><button mat-button (click)="openEdit(element)"><mat-icon>build</mat-icon></button></td>
+            </ng-container>
+
+            <ng-container matColumnDef="delete">
+                <th mat-header-cell *matHeaderCellDef> Delete </th>
+                <td mat-cell *matCellDef="let element"><button mat-button (click)="deleteItem(element)"><mat-icon>delete</mat-icon></button></td>
+            </ng-container>
+                
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-card>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

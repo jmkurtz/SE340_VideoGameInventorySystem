@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Game-Inventory-WebApi", "Game-Inventory-WebApi\Game-Inventory-WebApi.ccproj", "{FCDF62AE-4120-4E29-BD6B-D009BB55CD1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{2134BE3D-DFD8-414D-BD8A-C4190F3C3B85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCDF62AE-4120-4E29-BD6B-D009BB55CD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDF62AE-4120-4E29-BD6B-D009BB55CD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDF62AE-4120-4E29-BD6B-D009BB55CD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDF62AE-4120-4E29-BD6B-D009BB55CD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2134BE3D-DFD8-414D-BD8A-C4190F3C3B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2134BE3D-DFD8-414D-BD8A-C4190F3C3B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2134BE3D-DFD8-414D-BD8A-C4190F3C3B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2134BE3D-DFD8-414D-BD8A-C4190F3C3B85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {921F1DB8-3713-4439-955C-AA3FF64D4D35}
+	EndGlobalSection
+EndGlobal

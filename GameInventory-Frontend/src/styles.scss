@@ -1,0 +1,158 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$GameInventory-primary: mat-palette($mat-indigo);
+$GameInventory-accent: mat-palette($mat-pink, A200, A100, A400);
+$ButtonHeight: 70%;
+$ButtonWidth: 90%;
+$ButtonOpacity: 85%;
+
+// The warn palette is optional (defaults to red).
+$GameInventory-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$GameInventory-theme: mat-light-theme($GameInventory-primary, $GameInventory-accent, $GameInventory-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($GameInventory-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; 
+    font-family: 
+    Roboto, "Helvetica Neue", sans-serif; 
+}
+
+//Console Style
+
+
+
+
+
+
+
+.mainpageClass{
+    width: 75%;
+    margin-left: 12%;
+}
+
+.homepageClass {
+    background-image: url('./assets/img/homeBackground.jpg');
+    background-size: cover;
+}
+
+table {
+    width: 100%;
+}
+
+.tablecardClass{
+    width: 80%;
+    margin-left: 10%;
+}
+
+//Xbox Classes
+
+.xboxButton{
+    color: white;
+    background-color: #117D10;
+    height: $ButtonHeight;
+    width: $ButtonWidth;
+    opacity: $ButtonOpacity;
+}
+
+.xboxPageClass{
+    background-color: #117D10;
+}
+
+.xboxLogo {
+    width: 30%;
+    margin-left: 35%;
+}
+
+//PS4 Classes
+
+.ps4Button{
+    color: white;
+    background-color: #003F97;
+    height: $ButtonHeight;
+    width: $ButtonWidth;
+    opacity: $ButtonOpacity;
+}
+
+.ps4PageClass{
+    background-color: #003F97;
+}
+
+.ps4Logo {
+    width: 30%;
+    margin-left: 35%;
+}
+
+//PC Classes
+
+.pcButton{
+    color: white;
+    background-color: purple;
+    height: $ButtonHeight;
+    width: $ButtonWidth;
+    opacity: $ButtonOpacity;
+    margin-top: 5%;
+}
+
+.pcPageClass{
+    background-color: purple;
+}
+
+.pcLogo {
+    width: 35%;
+    margin-left: 32.5%;
+}
+
+//Nintendo Classes
+
+.nintendoButton{
+    color: white;
+    background-color:#E70012;
+    height: $ButtonHeight;
+    width: $ButtonWidth;
+    opacity: $ButtonOpacity;
+}
+
+.nintendoPageClass{
+    background-color:#E70012;
+}
+
+.nintendoLogo {
+    width: 30%;
+    margin-left: 35%;
+}
+
+//Console Pages
+
+.consoleToolbar{
+    background-color: white;
+    width: 95%;
+    margin-left: 1.5%;
+}
+
+.nowrap {
+    width: 95%;
+}
